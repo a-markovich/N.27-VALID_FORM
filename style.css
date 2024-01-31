@@ -1,0 +1,57 @@
+.longtext {
+    position: absolute; 
+    left: 170px; 
+    width: 435px;
+}
+.longtext-span {
+    color: red; 
+    position: absolute; 
+    left: 620px;
+}
+.number {
+    position: absolute; 
+    left: 170px; 
+    width: 100px;
+}
+.number-span {
+    color: red; 
+    position: absolute; 
+    left: 285px;
+}
+.shorttext {
+    position: absolute; 
+    left: 170px; 
+    width: 200px;
+}
+.shorttext-span {
+    color: red; 
+    position: absolute; 
+    left: 390px;
+}
+.combo {
+    position: absolute; 
+    left: 170px; 
+    width: 200px;
+}
+.radio {
+    position: absolute; 
+    left: 170px;
+}
+.radio-span {
+    color: red; 
+    position: absolute; 
+    left: 410px;
+}
+.check {
+    position: absolute; 
+    left: 170px;
+}
+.check-span {
+    color: red; 
+    position: absolute; 
+    left: 200px;
+}
+.description {
+    width: 600px; 
+    height: 50px;
+}

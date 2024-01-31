@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>VALID_FORM</title>
+</head>
+<body>
+    <p>Для внесения вашего сайта в каталог, заполните форму:</p>
+    <form id="siteForm" action="https://fe.it-academy.by/TestForm.php" novalidate>
+        <label id="sitedevelopers">Разработчики:
+            <input type="text" name="sitedevelopers" class="longtext">
+        </label><br><br>
+        <label id="sitename">Название сайта:	
+            <input type="text" name="sitename" class="longtext">
+        </label><br><br>
+        <label id="siteurl">URL сайта:
+            <input type="url" name="siteurl" class="longtext">
+        </label><br><br>
+        <label id="sitedate">Дата запуска сайта:
+            <input type="date" name="sitedate" class="number">
+        </label><br><br>
+        <label id="visitors">Посетителей в сутки:
+            <input type="number" name="visitors" class="number">
+        </label><br><br>
+        <label id="email">E-mail для связи:
+            <input type="email" name="email" class="shorttext">
+        </label><br><br>
+        <label id="division">Рубрика каталога:
+            <select name="division" class="shorttext">
+                <option value="1">здоровье</option>
+                <option value="2">домашний уют</option>
+                <option value="3" selected>бытовая техника</option>
+            </select>
+        </label><br><br>
+        <label id="radio">Размещение:
+            <span class="radio">
+                <input type="radio" name="payment" id="radio1" value="1">бесплатное
+                <input type="radio" name="payment" id="radio2" value="2">платное
+                <input type="radio" name="payment" id="radio3" value="3">VIP
+            </span>
+        </label><br><br>
+        <label id="checkbox">Разрешить отзывы:
+            <input type="checkbox" name="votes" class="check">
+        </label><br><br>
+        <label id="description">Описание сайта:<br>
+            <textarea name="description" class="description"></textarea>
+        </label><br><br>
+        <input type="submit" value="Опубликовать">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
