@@ -47,7 +47,7 @@ function validateDevelopersField() {
         const textError = document.createTextNode("поле не заполнено или превышает 30 символов");
         spanElem.appendChild(textError);
         labelElem.appendChild(spanElem);
-        developersField.focus();
+        //developersField.focus();
     } else if (valueField && valueField.length<=30 && spanElem) {
         labelElem.removeChild(spanElem);  
     }
@@ -65,7 +65,6 @@ function validateSitenameField() {
         const textError = document.createTextNode("поле не заполнено или превышает 30 символов");
         spanElem.appendChild(textError);
         labelElem.appendChild(spanElem);
-        sitenameField.focus();
     } else if (valueField && valueField.length<=30 && spanElem) {
         labelElem.removeChild(spanElem);  
     }
@@ -83,7 +82,6 @@ function validateSiteurlField() {
         const textError = document.createTextNode("поле не заполнено или превышает 30 символов");
         spanElem.appendChild(textError);
         labelElem.appendChild(spanElem);
-        siteurlField.focus();
     } else if (valueField && valueField.length<=30 && spanElem) {
         labelElem.removeChild(spanElem);  
     }
@@ -101,7 +99,6 @@ function validateSitedateField() {
         const textError = document.createTextNode("поле не заполнено");
         spanElem.appendChild(textError);
         labelElem.appendChild(spanElem);
-        sitedateField.focus();
     } else if (valueField && spanElem) {
         labelElem.removeChild(spanElem);  
     }
@@ -119,7 +116,6 @@ function validateVisitorsField() {
         const textError = document.createTextNode("поле не заполнено или значение отрицательное");
         spanElem.appendChild(textError);
         labelElem.appendChild(spanElem);
-        visitorsField.focus();
     } else if (valueField && valueField >= 0 && spanElem) {
         labelElem.removeChild(spanElem);  
     }
@@ -137,7 +133,6 @@ function validateEmailField() {
         const textError = document.createTextNode("поле не заполнено или превышает 25 символов");
         spanElem.appendChild(textError);
         labelElem.appendChild(spanElem);
-        emailField.focus();
     } else if (valueField && valueField.length<=25 && spanElem) {
         labelElem.removeChild(spanElem);  
     }
@@ -155,7 +150,6 @@ function validateDivisionField() {
         const textError = document.createTextNode("пожалуйста, выберите другую рубрику");
         spanElem.appendChild(textError);
         labelElem.appendChild(spanElem);
-        divisionField.focus();
     } else if (valueField !== "3" && spanElem) {
         labelElem.removeChild(spanElem);  
     }
@@ -173,7 +167,6 @@ function validateRadioField() {
         const textError = document.createTextNode("VIP размещение недоступно");
         spanElem.appendChild(textError);
         labelElem.appendChild(spanElem);
-        document.getElementById('radio').scrollIntoView();
     } 
     if ( valueField === "" && !spanElem) {
         const spanElem = document.createElement("span");
@@ -182,9 +175,6 @@ function validateRadioField() {
         const textError = document.createTextNode("поле не заполнено");
         spanElem.appendChild(textError);
         labelElem.appendChild(spanElem);
-        document.getElementById('radio').scrollIntoView();
-    } else if (valueField === "" && spanElem) {
-        document.getElementById('radio').scrollIntoView();
     } else if (spanElem) {
         labelElem.removeChild(spanElem);  
     }
@@ -201,7 +191,6 @@ function validateCheckboxField() {
         const textError = document.createTextNode("поле не заполнено");
         spanElem.appendChild(textError);
         labelElem.appendChild(spanElem);
-        document.getElementById("checkbox").scrollIntoView();
     }  else if (checkboxField.checked && spanElem) {
         labelElem.removeChild(spanElem);  
     }
@@ -219,7 +208,6 @@ function validateDescriptionField() {
         const textError = document.createTextNode("поле не заполнено");
         spanElem.appendChild(textError);
         labelElem.appendChild(spanElem);
-        descriptionField.focus();
     } else if (valueField && spanElem) {
         labelElem.removeChild(spanElem);  
     }
